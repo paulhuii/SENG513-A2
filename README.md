@@ -1,4 +1,4 @@
-# Battleship Game
+# Battleship Game (Paul Hui)
 
 ## Target Platform
 - Desktop
