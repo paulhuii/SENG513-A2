@@ -1,0 +1,50 @@
+<!-- Course: SENG 513
+Date: 2019-02-10
+Assignment 2
+Name: Paul Hui
+UCID: 10122682 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Battleship Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Game stuff -->
+    <h1>Battleship Game</h1>
+
+    <!-- Instructions stuff -->
+    <div id="game-info">
+        <h2>Target Platform</h2>
+        <p>Desktop</p>
+        <h2>Game Genre</h2>
+        <p>Strategy, Board Game</p>
+        <h2>Game Objective</h2>
+        <p>Sink all of your opponent's ships before they sink yours.</p>
+        <h2>Rules</h2>
+        <ol>
+            <li>Each player has a grid to place their ships.</li>
+            <li>Players take turns guessing coordinates to attack.</li>
+            <li>A hit or miss is marked on the grid.</li>
+            <li>The game continues until one player's fleet is entirely sunk.</li>
+        </ol>
+        <!-- <button id="instructions-button">Instructions</button> -->
+        </div>
+
+    <!-- Buttons and Grid stuff -->
+    <button id="start-button">Start Game</button>
+    <div class="grid" id="player-grid"></div>
+    <script src="script.js"></script>
+
+    <!-- Scoreboard stuff -->
+    <h2 id="scoreboard-header">Scoreboard</h2>
+    <div id="scoreboard">
+        <p>Player Score: <span id="player-score">0</span></p>
+        <p>Computer Score: <span id="computer-score">0</span></p>
+    </div>
+
+</body>
+</html>
