@@ -55,23 +55,23 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         alert("Functionality still in progress!!!");
+
+        // add boat to positions of choice for player 1
+
+        // add boat to positions of choice for player 2
+
+        // repeat a few times to get a few boats
+
+        // add event listener to listen for clicks on the grid to determine if hit or miss
+
+        // update score board
+
+        // create a gameover function to check the number of hits == number of boats
+                // end game if true
+
+        // ensure turns are taken properly for each player
+
     });
 });
 
-
-
-
-
-//Functionality I will need to implement
-//initializing board
-//setting up ships for each player
-//displaying the board
-//allowing user to choose where to attack
-//check for hit or miss
-//update score
-//check to see if game is over
-//changing turns
-
-//will need listner for when a cell is selected (on click)
-//will need listener for resetting game (on click)
 
