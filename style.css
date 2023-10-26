@@ -64,6 +64,11 @@ h1 {
     cursor: pointer;
 }
 
+#player2-grid {
+    display: none;
+  }
+  
+
 #player-grid div:hover {
     background-color: grey;
     opacity: 0.25;

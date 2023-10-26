@@ -50,13 +50,31 @@ document.addEventListener('DOMContentLoaded', function () {
                 const cell = document.createElement('div');
                 cell.dataset.row = row;
                 cell.dataset.col = col;
+
+
+                // Attach the click event listener to the cell
+                cell.addEventListener('click', handleCellClick);
+            
                 playerGrid.appendChild(cell);
             }
         }
 
-        alert("Functionality still in progress!!!");
+        // alert("Functionality still in progress!!!");
 
-        // add boat to positions of choice for player 1
+    });
+
+    // add boat to positions of choice for player 1
+    function handleCellClick(event) {
+        const row = event.target.dataset.row;
+        const col = event.target.dataset.col;
+    
+        // Change background color to white
+        event.target.style.backgroundColor = 'white';
+    
+        // Mark this cell as containing a ship on the player board
+        playerBoard[row][col] = 'X';
+    }
+
 
         // add boat to positions of choice for player 2
 
@@ -71,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // ensure turns are taken properly for each player
 
-    });
 });
 
 
