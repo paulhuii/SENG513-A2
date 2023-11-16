@@ -1,6 +1,6 @@
 /* Course: SENG 513
-Date: 2019-02-10
-Assignment 2
+Date: 2023-11-16
+Assignment 3
 Name: Paul Hui
 UCID: 10122682 */
 
@@ -36,7 +36,7 @@ h1 {
     background-color: #005599;
 }
 
-#player-grid {
+#player-grid, #opponent-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr); 
     grid-template-rows: repeat(10, 1fr); 
@@ -64,12 +64,29 @@ h1 {
     cursor: pointer;
 }
 
+#opponent-grid div {
+    width: 100%; 
+    height: 0; 
+    padding-bottom: 100%; 
+    background-color: light grey;
+    border: 1px solid #999;
+    text-align: center;
+    line-height: 0; 
+    font-size: 24px;
+    cursor: pointer;
+}
+
 #player2-grid {
     display: none;
   }
   
 
 #player-grid div:hover {
+    background-color: grey;
+    opacity: 0.25;
+}
+
+#opponent-grid div:hover {
     background-color: grey;
     opacity: 0.25;
 }
@@ -176,3 +193,40 @@ h1 {
   #game-info ol {
     list-style-position: inside; 
   }
+
+  .grid-cell {
+    width: 30px; 
+    height: 30px;
+    border: 1px solid black;
+    float: left; 
+    }
+
+    .boat {
+        background-color: gray; 
+    }
+
+    .hidden-boat {
+        background: rgba(0, 0, 0, 0.05);  
+    }
+
+    .hit {
+        background-color: red; 
+    }
+    
+    .miss {
+        background-color: blue; 
+    }
+
+    .victory-message {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+    }
+    

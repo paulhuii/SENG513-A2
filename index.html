@@ -1,9 +1,9 @@
-<!-- Course: SENG 513
-Date: 2019-02-10
-Assignment 2
+<!--
+Course: SENG 513
+Date: 2023-11-16
+Assignment 3
 Name: Paul Hui
 UCID: 10122682 -->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,11 +13,10 @@ UCID: 10122682 -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Game stuff -->
     <h1>Battleship Game</h1>
 
-    <!-- Instructions stuff -->
     <div id="game-info">
+        <!-- Game Information -->
         <h2>Target Platform</h2>
         <p>Desktop</p>
         <h2>Game Genre</h2>
@@ -31,22 +30,33 @@ UCID: 10122682 -->
             <li>A hit or miss is marked on the grid.</li>
             <li>The game continues until one player's fleet is entirely sunk.</li>
         </ol>
-        <!-- <button id="instructions-button">Instructions</button> -->
-        </div>
+    </div>
 
-    <!-- Buttons and Grid stuff -->
     <button id="start-button">Start Game</button>
-    <div class="grid" id="player-grid"></div>
-    <div class="grid" id="player2-grid"></div>
+
+    <!-- Player Grid -->
+    <div id="player-area">
+        <h2>Player's Grid</h2>
+        <div class="grid" id="player-grid"></div>
+    </div>
+
+    <!-- Opponent Grid -->
+    <div id="opponent-area">
+        <h2>Opponent's Grid</h2>
+        <div class="grid" id="opponent-grid"></div>
+    </div>
 
     <script src="script.js"></script>
 
-    <!-- Scoreboard stuff -->
+    <!-- Scoreboard -->
     <h2 id="scoreboard-header">Scoreboard</h2>
     <div id="scoreboard">
         <p>Player 1 Score: <span id="player-score">0</span></p>
-        <p>Player 2 Score: <span id="computer-score">0</span></p>
+        <p>Player 2 Score: <span id="opponent-score">0</span></p>
     </div>
+    <!-- Script for canvas-confetti library -->
+    <!-- This was for fun! I just added for fun even though its not part of the assignment. -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
 
 </body>
 </html>
